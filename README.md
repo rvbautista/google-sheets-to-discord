@@ -12,6 +12,7 @@ With minor modifications to allow sending stored string from sheet and adding a 
 You only need two information:
 
 **range**: The range where the cell to send the message is stored
+
 **discord_webhook**: webhook of the Discord bot added to the channel
 
 More details can be found in the Lido tutorial for sending message from Google Sheets to Discord:
