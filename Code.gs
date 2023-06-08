@@ -7,7 +7,7 @@ function postMessageToDiscord(){
   var sheet = SpreadsheetApp.getActiveSheet();
   var rows = sheet.getDataRange().getValues();
 
-  var numRows = rows.length;
+   var numRows = rows.length;
 
 //  Logger.log(rows[1][1])
 
@@ -33,10 +33,7 @@ function postMessageToDiscord(){
 
       var cell = sheet.getRange(i+1,1); 
       Logger.log(cell);
-      cell.setValue('true');
-      var datetimemark = sheet.getRange(i+1,3);
-      Logger.log(cell)
-      datetimemark.setValue(new Date()).setNumberFormat("MM/dd/yyyy hh:mm:ss");
+      cell.setValue(new Date()).setNumberFormat("MM/dd/yyyy hh:mm:ss");
     }
   }
 
